@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf=8">
+        <link rel="stylesheet" type="text/css" href="index.css">
+        <link href="https://fonts.googleapis.com/css?family=Amatic+SC&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Oxygen&display=swap" rel="stylesheet">
+        <title>TIA</title>
+    </head> 
+    <body>
+
+        <div>
+                <br>
+                <a><img src="Mackenzie_logo.png" id="logo"></a>
+        </div>
+
+        <div>
+                <h1 id="tiaTitle">Terminal Informativo Acadêmico</h1>
+            <br>
+        </div>
+
+        <div id="tiaForm">
+            <form action="/" name="tiaForm" onsubmit="return validateForm()">
+                <label for="lmatricula" id="matricula">Matricula</label>
+                
+                <input type="text" id="lmatricula" name="lmatricula" pattern="[0-9]{8}" required>
+                <br>
+                <br>
+                <label for="lsenha" id="senha">Senha</label>
+                
+                <input type="password" id="lsenha" name="lsenha" required>
+                <br>
+                <br>
+                    <label for="lunidade" id="unidade">Unidade</label>
+                    
+                    <select id="lunidade" name="lunidade">
+                        <option value="Selecione" selected>Selecione uma unidade</option>
+                        <option value="Alphaville">Campus Alphaville</option>
+                        <option value="Campinas">Campus Campinas</option>
+                        <option value="Higienopolis">Campus Higienopolis</option>
+                        <option value="EaD">EaD</option>
+                    </select>
+                <br>
+                <br>
+                <input type="submit" value="Conectar">
+            </form>
+        </div>
+
+        <script>
+                function validateForm() {
+                    var unidade = document.forms["tiaForm"]["lunidade"].value;
+                    if (unidade == "Selecione") {
+                        alert("Selecione uma Unidade");
+                        return false;
+                    }
+                }
+        </script>
+    </body>  
+</html>

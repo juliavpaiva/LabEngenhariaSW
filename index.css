@@ -1,0 +1,55 @@
+
+    body {
+        text-align: center;
+    }
+
+    #logo{
+        max-width: 20%;
+        height: auto;
+    }
+    
+    #tiaTitle{
+        font-family:'Amatic SC';
+        font-size: 300%;
+    }
+    #matricula, #senha, #unidade{
+        font-family:'Oxygen';
+    }
+    #lmatricula, #lsenha, select {
+
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        font-family:'Oxygen';
+    }
+    
+    input[type=submit] {
+        width: 50%;
+        background-color: #F10000;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-family:'Oxygen';
+    }
+    
+    input[type=submit]:hover {
+        background-color: #E90000;
+    }
+    
+
+    #tiaForm {
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        box-sizing: border-box;
+        border-radius: 5px;
+        box-shadow: -3px 11px 31px -10px rgba(0,0,0,0.35);
+        
+    }
